@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="86F8FEA3D5D5C0CDFA26071226B3E84FD5AEECE6355EAA7BD436D592D2BC90E851EF23A3E2F643BCCB4BF6B89881DF82F145AB8011980DF35234E1A6EE055D3A" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Lumberjack Core" Name="http://www.ni.com/Lumberjack.Core" OldestCompatibleVersion="9.19.0.49152" Version="9.19.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="9.20.0.50042" Name="FlexLogger" Version="26.3.0.0" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="67f00b59808b4494adc5194dfa7e9623" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="99622bc0471c4b52bd7dc6a28ddbd497" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="4c72221d5e0f457dba55bbd1e6831c46" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
+			<DefaultTarget />
+			<SourceFileReference Id="d41315faf26541dfbadfc70a896df100" ModelDefinitionType="NationalInstruments.Lumberjack.Core.ChannelSpecification.ChannelSpecificationDefinition" Name="Channel Specification.flxio" StoragePath="Channel Specification.flxio" />
+			<SourceFileReference Id="4e1e4d4d484a40f98a19493a58114d5a" ModelDefinitionType="NationalInstruments.Lumberjack.Core.LoggingSpecification.LoggingSpecificationDefinition" Name="Logging Specification.flxcfg" StoragePath="Logging Specification.flxcfg" />
+			<SourceFileReference Id="b76b3c842e414b54bcbc9c95407820ac" ModelDefinitionType="NationalInstruments.Lumberjack.Core.TestSpecification.TestSpecificationDefinition" Name="Test Specification.flxtest" StoragePath="Test Specification.flxtest" />
+			<SourceFileReference Id="9b4589fd91d641f39e82a9b48f55fd46" ModelDefinitionType="NationalInstruments.Lumberjack.Core.Screen.ScreenModel" Name="Screen.flxscr" StoragePath="Screen.flxscr" />
+			<EmbeddedDefinitionReference Id="29204f30531c425aab2e259a9d7f6819" ModelDefinitionType="SystemLinkServerTypeDefinition" Name="SystemLinkServerTypeDefinition" Reparentable="False">
+				<SystemLinkServerTypeDefinition SystemLinkServerType="None" xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="78772a8d74374f2d9e4e9193198d13d8" ModelDefinitionType="PublishSystemLinkTagsDefinition" Name="PublishSystemLinkTagsDefinition" Reparentable="False">
+				<PublishSystemLinkTagsDefinition xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="174e56006df142f3b560b67898b7925b" ModelDefinitionType="PublishSystemLinkFilesDefinition" Name="PublishSystemLinkFilesDefinition" Reparentable="False">
+				<PublishSystemLinkFilesDefinition xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="377cf09f22dd42eb91323270a0fcf762" ModelDefinitionType="AutoRetryPublishSystemLinkFilesDefinition" Name="AutoRetryPublishSystemLinkFilesDefinition" Reparentable="False">
+				<AutoRetryPublishSystemLinkFilesDefinition xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="36b7ea186df34f93b240df31a797c813" ModelDefinitionType="SystemLinkTagRetentionSettingsDefinition" Name="SystemLinkTagRetentionSettingsDefinition" Reparentable="False">
+				<SystemLinkTagRetentionSettingsDefinition xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="da14b87de37d425697d8bde07f59954d" ModelDefinitionType="SmtpSettingsDefinition" Name="SmtpSettingsDefinition" Reparentable="False">
+				<SmtpSettingsDefinition SmtpPort="0" xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="f02da8ad2cfb4856b4b68079099eef5b" ModelDefinitionType="ProjectLockedDefinition" Name="ProjectLockedDefinition" Reparentable="False">
+				<ProjectLockedDefinition xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="591fcbdef95c46cd952d1976697f6a6c" ModelDefinitionType="ProjectLockedPasswordHashDefinition" Name="ProjectLockedPasswordHashDefinition" Reparentable="False">
+				<ProjectLockedPasswordHashDefinition xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="8ab1440997341f08b79b7341d5f0ffa" ModelDefinitionType="RemoteTargetSettingsDefinition" Name="RemoteTargetSettingsDefinition" Reparentable="False">
+				<RemoteTargetSettingsDefinition xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="bea16f142b204c4e849d6e99f0fcdd16" ModelDefinitionType="ProjectCreationDate" Name="ProjectCreationDate" Reparentable="False">
+				<ProjectCreationDate DateTime="2026-05-11T01:23:09.0984365Z" xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="d1791c6a48774916b0712a7fe933d7fe" ModelDefinitionType="ProjectRunNumber" Name="ProjectRunNumber" Reparentable="False">
+				<ProjectRunNumber RunNumber="0" xmlns="http://www.ni.com/Lumberjack.Core" />
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+		<NameScopingEnvoy Id="e8b5dfd9bda04f959067cb4b2992d6b9" ModelDefinitionType="NullTarget" Name="NullTarget">
+			<NullTarget />
+			<EmbeddedDefinitionReference Id="df02ba773fe24d979668da5ceebbdd89" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
+				<PackageReferencesDefinition />
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</Project>
+	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework" />
+</SourceFile>

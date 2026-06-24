@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="2F10CFDC187BB97297F0C8982F2DF232D7B50E57D841F3A54CEF74BA4DD130EF2CBCEBA318C21F40880DDCCAF29B7526AC084F18FECFDFC1FF96CB69FD7507D8" Timestamp="1DCE0E98F8E581F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Lumberjack Core" Name="http://www.ni.com/Lumberjack.Core" OldestCompatibleVersion="9.19.0.49152" Version="9.19.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="9.20.0.50042" Name="FlexLogger" Version="26.3.0.0" />
+	</SourceModelFeatureSet>
+	<LoggingSpecification xmlns="http://www.ni.com/Lumberjack.Core">
+		<LoggingConfigurationModel Id="2c0a051fdbe34455b3734f6c81e25f2f">
+			<ProcessingElementModelOwner Id="241c55f1b5ee4f99b974d6633f00a66e">
+				<TriggeredLoggingProvider Id="4edca3f7dd91425192f8d237a3872d84" ModelTypeId="[string]CBA104E4-2D21-4AC7-915B-D7DCC1243DCE" StartTime="2026-05-10T21:23:08.960772999999999999958845420255926228492171503603458404541015625-04:00" />
+				<TdmsLoggingProvider DataReductionStrategy="Decimate" Id="4747c62348f944bb83430ae9941793e2" LogFileBackupPath="&quot;C:\\Users\\javix\\OneDrive\\Documents\\FlexLogger\\data\\backups&quot;" LogFileBasePath="&quot;C:\\Users\\javix\\OneDrive\\Documents\\FlexLogger\\data&quot;" ModelTypeId="[string]59163356-411F-436B-A6B6-82FB1EFB19E1">
+					<UserDefinedMetadata Id="54a9825bbc974fb3a2078aaf694f1668">
+						<UserDefinedMetadataItem DataType="String" Id="696e585cd87b4ec0ae743c07733ec3fa" Name="Operator">
+							<p.Value>javix</p.Value>
+						</UserDefinedMetadataItem>
+						<UserDefinedMetadataItem DataType="String" Id="4bfb497c4568459691e4bb94e7034c61" Name="DUT">
+							<p.Value>""</p.Value>
+						</UserDefinedMetadataItem>
+					</UserDefinedMetadata>
+				</TdmsLoggingProvider>
+			</ProcessingElementModelOwner>
+		</LoggingConfigurationModel>
+	</LoggingSpecification>
+</SourceFile>

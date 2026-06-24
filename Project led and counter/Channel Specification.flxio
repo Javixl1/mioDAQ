@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="B10996B87A4455F5AA7CD44E73197A900B77EF139463CE6B2AFCF620D6FB3E7C949042D235E03CDACF381F87BE51D32D48C1AEB40A839B1A7F329C2AE179A663" Timestamp="1DCE0F233B7EC0B" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="FlexLogger DAQmx" Name="http://www.ni.com/FlexLogger/DAQmx" OldestCompatibleVersion="9.9.0.49152" Version="9.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Lumberjack Core" Name="http://www.ni.com/Lumberjack.Core" OldestCompatibleVersion="9.19.0.49152" Version="9.19.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="9.20.0.50042" Name="FlexLogger" Version="26.3.0.0" />
+	</SourceModelFeatureSet>
+	<ChannelSpecification xmlns="http://www.ni.com/Lumberjack.Core">
+		<ChannelConfigurationModel Id="d4236d33c35a4a6794f55a16a5c4c60e">
+			<ProcessingElementModelOwner Id="b6a65ab2ca564b068aca43361a981030">
+				<DAQmxProcessingElement Id="2c7c1187e5a743fd85f688345d14b4b0" xmlns="http://www.ni.com/FlexLogger/DAQmx">
+					<DAQmxChassisModelProxy DeviceName="[string]mioDAQ" Id="9231a024fe1d46ef8f9a219d2f26567e" SerialNumber="[string]028347FE">
+						<DAQmxModuleModel BusType="[BusType]Usb" Chassis="[string]mioDAQ" ChassisSerialNumber="[string]028347FE" DeviceFamily="[DeviceFamily]NimbusDAQ" DeviceName="[string]mioDAQ" Id="3188225bbeed4231b545beb0bedadc7a" IsSimulated="[bool]False" ProductIdentifier="[ulong]31550" ProductName="[string]NI USB-6421" SerialNumber="[string]028347FE" Slot="[ulong]0" StyleProviderId="[string]UsbDeviceDisplayStrategyProvider">
+							<DigitalIOChannelSubsystemModel Id="66e60a27535e42c3b998468469208a5b" PortDigitalLogicFamily="[DigitalLogicFamily]LogicFamily5Volts" PortNumber="[int]0" SampleRateLevel="[SampleRateLevel]Digital">
+								<InputChannelAdapter Id="5bb318bc2f234ecfb571f163959c530a">
+									<DigitalInputChannel CriticalAlarm="5abfc74598c4ba095ac1a9be7b8037d" DataType="[Type]Boolean[]" ExpectedMaximum="[double]1.1" ExpectedMinimum="[double]-0.1" FullName="mioDAQ/port0/line0" Id="865162e5f1bb4923907f3d8b6403cf7a" PhysicalMeasurement="[PhysicalMeasurement]Digital" SampleRate="[double]10" SensorClass="[SensorClass]DigitalLine" Source="mioDAQ/port0/line0" Units="[string]Level" WarningAlarm="20673e7b8d864c3f96ee4f05a8750b22">
+										<DAQmxDigitalInput Id="e2f4aed512374142a4d2acfe2e2c8392">
+											<DigitalFilterModel DigitalFilterMinimumPulseWidth="[double]0.16" DigitalFilterMinimumPulseWidthRange="[ValueAndUnit:Range:double]0.02, 5.12, MicroSeconds" Id="db60b184148e47c0a3e09953efe4c2c5" />
+										</DAQmxDigitalInput>
+										<DigitalSensor Id="b25622c6921a4ad6b0a8cfbdc78703fb" />
+										<AlarmModel Id="5abfc74598c4ba095ac1a9be7b8037d" Severity="[AlarmSeverity]Critical" TriggerModel="88f0dc2435cb48478c46d6c67f450220" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]84b603b8-d7e2-4485-a71d-323a22249708" AliasToMonitor="[string]mioDAQ/port0/line0" Id="88f0dc2435cb48478c46d6c67f450220">
+												<DigitalLevelLowTriggerModel Id="637d5fc23fb24e608c60222977307189" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+										<AlarmModel Id="20673e7b8d864c3f96ee4f05a8750b22" Severity="[AlarmSeverity]Warning" TriggerModel="5e634548cdbd43d79f24ab51479d25c0" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]490d0295-ed61-4c42-8263-0b34e68bce8f" AliasToMonitor="[string]mioDAQ/port0/line0" Id="5e634548cdbd43d79f24ab51479d25c0">
+												<DigitalLevelLowTriggerModel Id="cc06f803e707402b8b17e0a33b57463a" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+									</DigitalInputChannel>
+								</InputChannelAdapter>
+								<OutputChannelAdapter Id="e77ed724045b42efa50bebe0f4e92acf">
+									<DigitalOutputChannel AppliedValueFullName="[string]mioDAQ/port0/line1_Written" ExpectedMaximum="[double]1" ExpectedMinimum="[double]0" FullName="mioDAQ/port0/line1" Id="fff522cdb4fb46e2b751d58c1ea31904" MappingAlias="[string]3cfb4f69-20bc-4419-ac58-ba341ecee851" PhysicalGeneration="[PhysicalGeneration]DigitalLine" ResetValue="[double]0" Source="mioDAQ/port0/line1" Units="[string]Level">
+										<SupportedDataType SupportedType="Boolean" xmlns="http://www.ni.com/Lumberjack.Core" />
+										<DAQmxDigitalLineOutput Id="a566b1d10b0c4b81a99f835ca11255d2" />
+									</DigitalOutputChannel>
+									<OutputChannelOutputInfo CriticalAlarm="4866b66efbb847f0b1e0e93f2e2b3773" DataType="[Type]Wfm(Double)" FullName="mioDAQ/port0/line1_Written" Id="f145c01179b24a989571bd70a20bca9d" SampleRate="[double]0" Source="mioDAQ/port0/line1" Units="[string]" WarningAlarm="4873b4deeee043d79fffe521220d69e2">
+										<AlarmModel Id="4866b66efbb847f0b1e0e93f2e2b3773" Severity="[AlarmSeverity]Critical" TriggerModel="8504a05cf4e4441ca9b12e46fc1603e3" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]e5406785-9f11-40c4-aa66-d23e8a4aa5e6" AliasToMonitor="[string]mioDAQ/port0/line1_Written" Id="8504a05cf4e4441ca9b12e46fc1603e3">
+												<AboveValueTriggerModel Id="3692762b598d4e94adb477e7264606a0" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+										<AlarmModel Id="4873b4deeee043d79fffe521220d69e2" Severity="[AlarmSeverity]Warning" TriggerModel="a92364e357214aacb88ef885f50b7a98" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]134dc3c8-4a1a-41ad-bc77-d8957912d80c" AliasToMonitor="[string]mioDAQ/port0/line1_Written" Id="a92364e357214aacb88ef885f50b7a98">
+												<AboveValueTriggerModel Id="643c219620514895b7bcf987c8a1333e" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+									</OutputChannelOutputInfo>
+								</OutputChannelAdapter>
+								<OutputChannelAdapter Id="ca446d7a63e74a8283ee9a280d04e572">
+									<DigitalOutputChannel AppliedValueFullName="[string]mioDAQ/port0/line2_Written" ExpectedMaximum="[double]1" ExpectedMinimum="[double]0" FullName="mioDAQ/port0/line2" Id="f73980db99c245d18a9e51a2ea1c92ae" MappingAlias="[string]31242ead-5966-49b4-8622-d099ded07596" PhysicalGeneration="[PhysicalGeneration]DigitalLine" ResetValue="[double]0" Source="mioDAQ/port0/line2" Units="[string]Level">
+										<SupportedDataType SupportedType="Boolean" xmlns="http://www.ni.com/Lumberjack.Core" />
+										<DAQmxDigitalLineOutput Id="e09d8a80a124412eac59d2e8cc82bcc6" />
+									</DigitalOutputChannel>
+									<OutputChannelOutputInfo CriticalAlarm="b607680e40b2486eb510608072f3b062" DataType="[Type]Wfm(Double)" FullName="mioDAQ/port0/line2_Written" Id="12457728f2a74cef8ce1b033ce789e00" SampleRate="[double]0" Source="mioDAQ/port0/line2" Units="[string]" WarningAlarm="5ccc3583563a47feadcab70e3ec6552e">
+										<AlarmModel Id="5ccc3583563a47feadcab70e3ec6552e" Severity="[AlarmSeverity]Warning" TriggerModel="d31825a34f90480bbf12de4791b2c5c3" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]5df08f47-a330-4002-8fb6-ed52435ad456" AliasToMonitor="[string]mioDAQ/port0/line2_Written" Id="d31825a34f90480bbf12de4791b2c5c3">
+												<AboveValueTriggerModel Id="fb04b83aa6c44a1ba55bda1e47f4a0ab" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+										<AlarmModel Id="b607680e40b2486eb510608072f3b062" Severity="[AlarmSeverity]Critical" TriggerModel="29213c1d83cb493bacb7ad01a8fd53bd" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]d7f3287d-29c3-4094-8459-c7203f91dc13" AliasToMonitor="[string]mioDAQ/port0/line2_Written" Id="29213c1d83cb493bacb7ad01a8fd53bd">
+												<AboveValueTriggerModel Id="8a28513c6d491c8e117a1e01fdc846" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+									</OutputChannelOutputInfo>
+								</OutputChannelAdapter>
+								<DirectionModel Id="ec0e25c44acf47d18a35fc9222baa69b" Sources="[IEnumerable:string]/port0/line0" />
+								<DirectionModel Direction="[ChannelDirection]Output" Id="df02c9f56c29478aad741f6cab122312" Sources="[IEnumerable:string]/port0/line1" />
+								<DirectionModel Direction="[ChannelDirection]Output" Id="696a6bea11b44b6a910479f1643a07bf" Sources="[IEnumerable:string]/port0/line2" />
+								<DirectionModel Id="d4e611c480824ff7936ea4fbf6bb3ba1" Sources="[IEnumerable:string]/port0/line3" />
+								<DirectionModel Id="86e638ced7204d02b039d97abbf7ca70" Sources="[IEnumerable:string]/port0/line4" />
+								<DirectionModel Id="e08917c895b24241959b701a61b94d53" Sources="[IEnumerable:string]/port0/line5" />
+								<DirectionModel Id="997a3d28acc8404c870814e1b99560cb" Sources="[IEnumerable:string]/port0/line6" />
+								<DirectionModel Direction="[ChannelDirection]Output" Id="2add5ec9f18f449c8aa0d30454115361" Sources="[IEnumerable:string]/port0/line7" />
+								<DirectionModel Id="f791ddb9ba734732a75fe400deea1173" Sources="[IEnumerable:string]/port0/line8" />
+								<DirectionModel Id="c21d9b0874c24984b6aab06a46741a9c" Sources="[IEnumerable:string]/port0/line9" />
+								<DirectionModel Id="3b0329ca64434d368e8931cb2b0f544e" Sources="[IEnumerable:string]/port0/line10" />
+								<DirectionModel Id="7825854834db45f9835aa28401217aba" Sources="[IEnumerable:string]/port0/line11" />
+								<DirectionModel Id="73d64d8da429431aad43ce378632e7ff" Sources="[IEnumerable:string]/port0/line12" />
+								<DirectionModel Id="5a7fb012d513420bb127fb0be295753b" Sources="[IEnumerable:string]/port0/line13" />
+								<DirectionModel Id="4ea3825bbe01416292b5eb13ce1c8423" Sources="[IEnumerable:string]/port0/line14" />
+								<DirectionModel Id="ee8200223eba4e16b398d9508070e1ff" Sources="[IEnumerable:string]/port0/line15" />
+							</DigitalIOChannelSubsystemModel>
+							<CounterInputChannelSubsystemModel Id="72f30160464445aa90e4d083830e578e" SampleRateLevel="[SampleRateLevel]LegacyCounter">
+								<InputChannelAdapter Id="418fa2d17fee4401b3dc74c941f8a412">
+									<LegacyCounterInputChannel CriticalAlarm="f525ffd719a74101970ec5ef51ce4608" DataType="[Type]Wfm(Double)" ExpectedMaximum="[double]10" ExpectedMinimum="[double]0" FullName="mioDAQ/ctr0" Id="b5ecf96e576f4bdbbb79e068822e1288" PhysicalMeasurement="[PhysicalMeasurement]Pulse" SampleRate="[double]6250" SensorClass="[SensorClass]EdgeCounter" Source="mioDAQ/ctr0" Units="[string]pulse" WarningAlarm="10bdbd3049dc4611bdcf2852e3c4dd6e">
+										<DAQmxEdgeCounterInput ActiveEdge="[Edge]Rising" ElectricalRange="[ValueAndUnit:Range:double]0, 0, None" ElectricalUnits="[Unit]Pulses" Filter="[Filter]None" Id="fe99ddda11914b3c834a1402c19d084f" InputTerminal="[string]PFI0" InputTerminalHysteresis="[double]0" InputTerminalVoltageThreshold="[double]0" ResetTerminalHysteresis="[double]0" ResetTerminalVoltageThreshold="[double]0" TerminalConfiguration="[TerminalConfiguration]Rse" VoltageThresholdValue="[double]0">
+											<DigitalFilterModel DigitalFilterMinimumPulseWidth="[double]0.02" DigitalFilterMinimumPulseWidthRange="[ValueAndUnit:Range:double]0.02, 5.12, MicroSeconds" Id="cb3191af9f694b5c8de4a37d238543a1" />
+										</DAQmxEdgeCounterInput>
+										<EventCounterSensor ElectricalMaximum="[double]4294967295" ElectricalMinimum="[double]0" Id="ef1dc9ebb5844db9830098b560a892f4" PhysicalMaximum="[double]10" PhysicalMinimum="[double]0" ScaleType="[ScaleType]PulseCounter">
+											<StandardUnitModel Id="1781285a007141518bcc210f4cd8c45a" Units="[Unit]Pulses" />
+											<PulseCounterScaleModel Id="da227ec64e50437cbd62b95a57bd82e2">
+												<IncrementPerPulsePropertyModel Id="8d0d478cd68744f7b36181e4e0f75589" ValuePerPulse="[double]1" ValuePerPulseUnit="[string]pulse/pulse" />
+												<ResettableInitialValuePropertyModel Id="ca95f64282a14ecca948700daebd42d7" />
+											</PulseCounterScaleModel>
+										</EventCounterSensor>
+										<AlarmModel Id="f525ffd719a74101970ec5ef51ce4608" Severity="[AlarmSeverity]Critical" TriggerModel="8472977f4c2e483181d722a940dc55eb" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]be086754-72ca-4001-8554-cca8c061f3cc" AliasToMonitor="[string]mioDAQ/ctr0" Id="8472977f4c2e483181d722a940dc55eb">
+												<AboveValueTriggerModel Id="6ba01532748243ca9606fc8bf64a4f3a" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+										<AlarmModel Id="10bdbd3049dc4611bdcf2852e3c4dd6e" Severity="[AlarmSeverity]Warning" TriggerModel="3f51e4c68bec419ab928b9986ea40556" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]f713be09-dd08-4179-b28f-664d6b401715" AliasToMonitor="[string]mioDAQ/ctr0" Id="3f51e4c68bec419ab928b9986ea40556">
+												<AboveValueTriggerModel Id="cff791e3ff9145ed8ed629394e876e71" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+									</LegacyCounterInputChannel>
+								</InputChannelAdapter>
+							</CounterInputChannelSubsystemModel>
+							<AnalogInputChannelSubsystemModel Id="7894b3c50784522a3835b5881573771" SampleRateLevel="[SampleRateLevel]Medium">
+								<InputChannelAdapter Id="14fb2323187b423ba29da87a17cbc220">
+									<AnalogInputChannel CriticalAlarm="a0748cd6bfa24494afac6222138512b8" DataType="[Type]Wfm(Double)" ExpectedMaximum="[double]10" ExpectedMinimum="[double]-10" FullName="mioDAQ/ai7" Id="85d89f0391a74d16bc11d8e7c19dc6d9" PhysicalMeasurement="[PhysicalMeasurement]Voltage" SampleRate="[double]100" SensorClass="[SensorClass]Voltage" Source="mioDAQ/ai7" Units="[string]V" WarningAlarm="f0d474c1a5d744be959c86fffbebedfb">
+										<AlarmModel Id="f0d474c1a5d744be959c86fffbebedfb" Severity="[AlarmSeverity]Warning" TriggerModel="63b9037a429347c1a030d8c28b480d4b" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]74b27737-5807-4c54-889e-183b1af62254" AliasToMonitor="[string]mioDAQ/ai7" Id="63b9037a429347c1a030d8c28b480d4b">
+												<AboveValueTriggerModel Id="4d08aeb5839147448cc2ef82403b81c2" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+										<AlarmModel Id="a0748cd6bfa24494afac6222138512b8" Severity="[AlarmSeverity]Critical" TriggerModel="2f81a1d6a764467b9be6d5697f3b762d" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]24d025c7-e994-413d-a64f-7a0468540d18" AliasToMonitor="[string]mioDAQ/ai7" Id="2f81a1d6a764467b9be6d5697f3b762d">
+												<AboveValueTriggerModel Id="21f23d9577cc4398acbc75268f87c14a" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+										<DAQmxVoltageInput ElectricalRange="[ValueAndUnit:Range:double]-10, 10, Volts" ElectricalUnits="[Unit]Volts" Filter="[Filter]None" Id="49917a45277a42989a9813f4361ec19e" TerminalConfiguration="[TerminalConfiguration]Rse" />
+										<VoltageSensor Coupling="[Coupling]DC" ElectricalMaximum="[double]10" ElectricalMinimum="[double]-10" Id="72bbc2b9618c49708649cca2f00b280b" PhysicalMaximum="[double]10" PhysicalMinimum="[double]-10" ScaleType="[ScaleType]Linear">
+											<StandardUnitModel Id="f94b76c61db948c28274517a91ab5b7a" Units="[Unit]Volts" />
+											<LinearScaleModel Id="ba7c6e47348a4517b3fe212485784c99">
+												<SlopeScalePropertyModel Id="84fabf610d044fffbf20e7bb509dfba3" SlopeUnit="[string]V/V" />
+												<ZeroedYInterceptPropertyModel Id="2bf1f2a7bae345088b3e6c8b9dba9143" />
+											</LinearScaleModel>
+										</VoltageSensor>
+									</AnalogInputChannel>
+									<IntermediateProcessingElementProducerChannel CriticalAlarm="199875d7df447c9aa762fea9be33ea1" DataType="[Type]Wfm(Double)" FullName="mioDAQ/ai7_Intermediate" Id="b8212a4dc3f147e0904a8bd1704d0b1a" IsTag="[bool]True" SampleRate="[double]100" Source="mioDAQ/ai7" Units="[string]V" WarningAlarm="169b472e5bc54790b502d692c474343b">
+										<AlarmModel Id="169b472e5bc54790b502d692c474343b" Severity="[AlarmSeverity]Warning" TriggerModel="2822a56bfd1c451c9cd3732f6cd9d0fc" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]5414bc62-6be5-4296-a3ed-8f83c9218c02" AliasToMonitor="[string]mioDAQ/ai7_Intermediate" Id="2822a56bfd1c451c9cd3732f6cd9d0fc">
+												<AboveValueTriggerModel Id="e339835671d8444b9c14348b76ec7450" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+										<AlarmModel Id="199875d7df447c9aa762fea9be33ea1" Severity="[AlarmSeverity]Critical" TriggerModel="8e2bc66cbc504c01b6d048f836f51e15" xmlns="http://www.ni.com/Lumberjack.Core">
+											<ChannelMonitorTriggerModel Alias="[string]a18284cc-183d-4997-b07d-75634deb823c" AliasToMonitor="[string]mioDAQ/ai7_Intermediate" Id="8e2bc66cbc504c01b6d048f836f51e15">
+												<AboveValueTriggerModel Id="b89d3e22c1214f0bb462e198513dc222" />
+											</ChannelMonitorTriggerModel>
+										</AlarmModel>
+									</IntermediateProcessingElementProducerChannel>
+								</InputChannelAdapter>
+							</AnalogInputChannelSubsystemModel>
+						</DAQmxModuleModel>
+						<ChassisTimingOwner Id="24e94e14f081409aa46d4059bfd590a0">
+							<ChassisSampleTimingModel Id="dd891e3bb0b84bb591f43445fe396c1e" Level="[SampleRateLevel]Slow" Units="[Unit]Hertz" Value="[double]1" />
+							<ChassisSampleTimingModel Id="d1283e309ff3491eabddf16f0b7bb3d9" Level="[SampleRateLevel]Medium" Units="[Unit]Hertz" Value="[double]100" />
+							<ChassisSampleTimingModel Id="44ae907bbaae448d9d0b2c22e3d19fb4" Level="[SampleRateLevel]Fast" Units="[Unit]Hertz" Value="[double]1000" />
+							<ChassisSampleTimingModel Id="159c502181a3441a942c060c4e98497d" Level="[SampleRateLevel]Counter" Units="[Unit]Hertz" Value="[double]100" />
+							<ChassisSampleTimingModel Id="429ed37a8e0d4c359cb53b71699476da" Level="[SampleRateLevel]LegacyCounter" Units="[Unit]Hertz" Value="[double]100" />
+							<ChassisSampleTimingModel Id="3dbfb73242d14b7e8f84254f83ceed42" Level="[SampleRateLevel]Digital" Units="[Unit]Hertz" Value="[double]10" />
+							<ChassisOnDemandTimingModel Id="ede438933a94557ad9be0fbefa33a75" Level="[SampleRateLevel]OnDemand" />
+							<ChassisSampleTimingModel Id="804c413579f74cdd9bcded57b7d26bd9" Level="[SampleRateLevel]AnalogOutput" Units="[Unit]Hertz" Value="[double]10" />
+						</ChassisTimingOwner>
+					</DAQmxChassisModelProxy>
+					<TopLevelTimingOwner FallbackMediumSampleRateLevel="[SampleRateLevel]Fast" Id="ddb8529bace43ad944bc89054faf365">
+						<SampleTiming Id="b8cccc8469714057b772ff3b965382b1" Level="[SampleRateLevel]Slow" Units="[Unit]Hertz" Value="[double]1" />
+						<SampleTiming Id="971a35149f0c45d38edacb9ef7c4fc4f" Level="[SampleRateLevel]Medium" Units="[Unit]Hertz" Value="[double]100" />
+						<SampleTiming Id="4cd0aede3f224f6484472b352153352a" Level="[SampleRateLevel]Fast" Units="[Unit]Hertz" Value="[double]1000" />
+						<SampleTiming Id="d9f6530ba45d4de09d6facff3b5f7487" Level="[SampleRateLevel]Counter" Units="[Unit]Hertz" Value="[double]100" />
+						<SampleTiming Id="c29896d62db74ad28325868d78f3ec79" Level="[SampleRateLevel]LegacyCounter" Units="[Unit]Hertz" Value="[double]100" />
+						<SampleTiming Id="8546da83adcd49078da0edb44d22243b" Level="[SampleRateLevel]Digital" Units="[Unit]Hertz" Value="[double]10" />
+						<OnDemandTiming Id="ebcc1dcd44c34c9bab9395b172238505" Level="[SampleRateLevel]OnDemand" />
+						<SampleTiming Id="3c58b4036dc2431db7b4e3e080b434a6" Level="[SampleRateLevel]AnalogOutput" Units="[Unit]Hertz" Value="[double]10" />
+					</TopLevelTimingOwner>
+				</DAQmxProcessingElement>
+			</ProcessingElementModelOwner>
+		</ChannelConfigurationModel>
+		<ChassisModelOwner Id="9fd8f8708f1640268d3e0f13f39b9567">
+			<ChassisModel BusType="[BusType]Usb" DeviceFamily="[DeviceFamily]NimbusDAQ" DeviceName="[string]mioDAQ" Hostname="[null]" Id="7ad2b57c3b6144dfb48b3bacc772067e" IpAddresses="[IEnumerable:string]" IsSimulated="[bool]False" NumberOfSlots="[ulong]0" ProductIdentifier="[ulong]31550" ProductName="[string]NI USB-6421" SerialNumber="[string]028347FE" StyleProviderId="[string]UsbDeviceDisplayStrategyProvider" SupportsSyncDomain="[bool]False" />
+		</ChassisModelOwner>
+	</ChannelSpecification>
+</SourceFile>

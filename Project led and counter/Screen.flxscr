@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="F2818995DDF2B9B752E918AFE88E013E2BCC14E43B7D41D313D6F4BABB3B354565B728771AD428B6DB6806BEC87FBFC1AD001548AD45C3AD9BF04F5AFC723243" Timestamp="1DCE0F233B88D7C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Configuration Based Software Core" Name="http://www.ni.com/ConfigurationBasedSoftware.Core" OldestCompatibleVersion="9.8.1.49152" Version="9.15.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Lumberjack Core" Name="http://www.ni.com/Lumberjack.Core" OldestCompatibleVersion="9.19.0.49152" Version="9.19.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.20.0.50042" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="9.20.0.50042" Name="FlexLogger" Version="26.3.0.0" />
+	</SourceModelFeatureSet>
+	<Screen Id="ea9bb68846b6459da94a1b67a4b2b973" xmlns="http://www.ni.com/Lumberjack.Core">
+		<ScreenSurface Height="[float]1600" Id="56d4e31024ea474480110b12011d816d" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000" xmlns="http://www.ni.com/ConfigurationBasedSoftware.Core">
+			<ChannelSwitch BaseName="[string]Power Button" Channel="[string]mioDAQ/port0/line7" ClickMode="[ClickMode]Press" Height="[float]64" Id="76f11a6d8c8f4d2b9161937488967a54" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]8cf5f8bc9394673873194d342e6ca84" Left="[float]134" Shape="[SwitchShape]Power" Top="[float]113" Width="[float]64" />
+			<Label Height="[float]16" Id="8cf5f8bc9394673873194d342e6ca84" LabelOwner="[UIModel]76f11a6d8c8f4d2b9161937488967a54" Left="[float]134" Text="[string]line7" Top="[float]93" Width="[float]25" xmlns="http://www.ni.com/PanelCommon" />
+			<ChannelNumericText BaseName="[string]Numeric" Channel="[string]mioDAQ/ctr0" Height="[float]24" Id="b22498d53c404b519a3233466ef924a2" IsReadOnly="[bool]True" Label="[UIModel]5b8d1f9af14a4b51a69ce5455bb95529" Left="[float]272" Maximum="[double]10" Minimum="[double]0" Top="[float]124" UnitAnnotation="[string]pulse" ValueFormatter="[string]LV:G5" ValueType="[Type]Double" Width="[float]79" />
+			<Label Height="[float]16" Id="5b8d1f9af14a4b51a69ce5455bb95529" LabelOwner="[UIModel]b22498d53c404b519a3233466ef924a2" Left="[float]272" Text="[string]ctr0" Top="[float]104" Width="[float]20" xmlns="http://www.ni.com/PanelCommon" />
+			<ChannelSwitch BaseName="[string]Power Button" Channel="[string]mioDAQ/port0/line1" ClickMode="[ClickMode]Press" Height="[float]55" Id="3a8ef72c4cfe4b23aa6b2a467dd112b4" IncludeInCapture="[bool]False" Label="[UIModel]2cd2f4c812f34080820207a4b329d7a1" Left="[float]272" Shape="[SwitchShape]Power" Top="[float]192" Width="[float]55" />
+			<Label Height="[float]16" Id="2cd2f4c812f34080820207a4b329d7a1" LabelOwner="[UIModel]3a8ef72c4cfe4b23aa6b2a467dd112b4" Left="[float]272" Text="[string]line1" Top="[float]172" Width="[float]25" xmlns="http://www.ni.com/PanelCommon" />
+			<LongHistoryGraph BaseName="[string]Long History Graph" Height="[float]400" Id="d7732f0426cc4af7817f9d085d46c35b" Label="[UIModel]b3488d3b6e994ceb84177a1cd6ee3681" Left="[float]431" MinWidth="[float]230" PlotAreaMargin="[SMThickness]49,26,44,27" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]74" Width="[float]600">
+				<LongHistoryLengthGraphAxis Adjuster="[RangeAdjuster]ContinuousChart" Id="1e342298b2fa4ea5a1d3038cb8988d18" Label="[string]X" LabelVisibility="[SMVisibility]Collapsed" MajorDivisions="[UIModel]9ea69275324d48878365d80f5fe21cd9" MinorTickVisibility="[SMVisibility]Collapsed" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 180, System.Double" ValueType="[Type]Double">
+					<RangeLabeledDivisions Id="9ea69275324d48878365d80f5fe21cd9" Mode="[RangeDivisionsMode]Count: 2" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<p.LabelPresenter Kind="LVTime" Format="#T" />
+					</RangeLabeledDivisions>
+				</LongHistoryLengthGraphAxis>
+				<HmiGraphPlot Channel="[string]mioDAQ/ai7" HorizontalScale="[UIModel]1e342298b2fa4ea5a1d3038cb8988d18" Id="7fabf2ea3c5f4f79b65e3bae68d87657" IsDefaultPlot="[bool]False" Label="[string]mioDAQ/ai7" VerticalScale="[UIModel]fd768e6fe0d7432384acbd579d8ba4c1">
+					<PlotRenderer Id="80ce3bc3b3904558b1b7e7bcfe21ca3e" LineStroke="[SMSolidColorBrush]#ffea4225" LineThickness="[double]1" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				</HmiGraphPlot>
+				<LongHistoryLengthGraphAxis Adjuster="[RangeAdjuster]GrowLoosely" Id="fd768e6fe0d7432384acbd579d8ba4c1" Label="[string]V" MajorDivisions="[UIModel]6d541660ec264a62b3b860b842ee60fd" Orientation="[SMOrientation]Vertical" Range="[IRange]-10, 10, System.Double" Visibility="[SMVisibility]Visible">
+					<RangeLabeledDivisions Id="6d541660ec264a62b3b860b842ee60fd" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<p.LabelPresenter Kind="LVRelativeSeconds" Format="G6" />
+					</RangeLabeledDivisions>
+				</LongHistoryLengthGraphAxis>
+			</LongHistoryGraph>
+			<HmiChartPlotLegend Graph="[UIModel]d7732f0426cc4af7817f9d085d46c35b" Height="[float]28" Id="40b50bbf8fac4ba4915d7bb24ecdd23a" Left="[float]1038" Top="[float]74" />
+			<HmiChartCursorLegend Graph="[UIModel]d7732f0426cc4af7817f9d085d46c35b" Height="[float]80" Id="d8f33de6de224c139a21cc3cd12a0194" Left="[float]436" MinHeight="[float]80" Top="[float]503" Visible="[bool]False" Width="[float]316" />
+			<HmiGraphStatisticsLegend Graph="[UIModel]d7732f0426cc4af7817f9d085d46c35b" Height="[float]40" Id="7cb886193b7d44baa1ba5bf634a71bef" Left="[float]756" MinHeight="[float]40" MinWidth="[float]100" Top="[float]503" Visible="[bool]False" />
+			<HmiChartScaleLegend Graph="[UIModel]d7732f0426cc4af7817f9d085d46c35b" Height="[float]52" Id="2189f9d7f32843238dfee09b2439b054" Left="[float]956" Top="[float]481" Visible="[bool]False" />
+			<CompositeGraphTools BackgroundColor="[SMSolidColorBrush]#fff7f7f7" Graph="[UIModel]d7732f0426cc4af7817f9d085d46c35b" Height="[float]26" Id="a9b68c156f694455b14a773728a912f4" Left="[float]801" OffsetX="[float]370" OffsetY="[float]3" Top="[float]77" Width="[float]184">
+				<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Hold" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]e24d2ba65cc04812bbc37c95fe64aebf" Enabled="[bool]False" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="489b6a432d334114835e5f0590cbd90c" IsMomentary="[bool]False" Label="[UIModel]c6e37caf83814a2c983122324bf0f82f" Left="[float]2" PartName="[string]PART_HoldButton" Top="[float]2" Value="[bool]True" Width="[float]28">
+					<Image BaseName="[string]Image" Id="e24d2ba65cc04812bbc37c95fe64aebf" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/GraphTools_Pause.png" Stretch="[SMStretch]None" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+				</ComposableButton>
+				<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Horizontal Zoom" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]9bf26fe0e9074503b874352fa276ac5d" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="b3e607f4325a425e8e5cc1bc75c691b8" IsMomentary="[bool]False" Label="[UIModel]586fad9035bc4c1ebaee0fcaba700eaf" Left="[float]33" PartName="[string]PART_ZoomHorizontalButton" Top="[float]2" Value="[bool]True" Width="[float]28">
+					<Image BaseName="[string]Image" Id="9bf26fe0e9074503b874352fa276ac5d" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomHorizontal.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+				</ComposableButton>
+				<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Vertical Zoom" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]8387f2702c9942b180c7a182e6213377" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="5922d73951354877b5fea09fa59e5fa8" IsMomentary="[bool]False" Label="[UIModel]2d19394cdbdd49ba87208aaf2ad8b0a9" Left="[float]63" PartName="[string]PART_ZoomVerticalButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+					<Image BaseName="[string]Image" Id="8387f2702c9942b180c7a182e6213377" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomVertical.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+				</ComposableButton>
+				<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Pan" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]15d6460615a9455fb4bc7f3e3cb20d66" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="6f99c119cb7b4669959b2efe5b1b50da" IsMomentary="[bool]False" Label="[UIModel]6e275cf8d5694c7488124335b1dadb5e" Left="[float]93" PartName="[string]PART_PanButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+					<Image BaseName="[string]Image" Id="15d6460615a9455fb4bc7f3e3cb20d66" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomPan.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+				</ComposableButton>
+				<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Reset" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]17489fcfa1e541faaebace1c856120de" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="6fdada33e76748e0b54ab492dbf3543b" IsMomentary="[bool]True" Label="[UIModel]db448ef877684de3864e595e86c23eb8" Left="[float]123" PartName="[string]PART_ResetButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+					<Image BaseName="[string]Image" Id="17489fcfa1e541faaebace1c856120de" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/ZoomExtents.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+				</ComposableButton>
+				<ComposableButton BackingCanDelete="[bool]False" BaseName="[string]Map" BorderBrush="[SMSolidColorBrush]#00ffffff" Content="[UIModel]16fb4570b12047abab7a923a71820976" Enabled="[bool]True" FalseBackground="[SMSolidColorBrush]#00ffffff" Height="[float]22" Id="3a82415d9d3c43febb339a5acc40d83e" IsMomentary="[bool]False" Label="[UIModel]53a1b171a8c44e61a26721e4e4005912" Left="[float]154" PartName="[string]PART_MappingButton" Top="[float]2" Value="[bool]False" Width="[float]28">
+					<Image BaseName="[string]Image" Id="16fb4570b12047abab7a923a71820976" Left="[float]0" Source="[string]pack://application:,,,/NationalInstruments.Hmi.Core;component/Resources/DataSource.png" Stretch="[SMStretch]Uniform" Top="[float]0" xmlns="http://www.ni.com/PlatformFramework" />
+				</ComposableButton>
+				<Label Id="c6e37caf83814a2c983122324bf0f82f" LabelOwner="[UIModel]489b6a432d334114835e5f0590cbd90c" Left="[float]2" Text="[string]Hold" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+				<Label Id="586fad9035bc4c1ebaee0fcaba700eaf" LabelOwner="[UIModel]b3e607f4325a425e8e5cc1bc75c691b8" Left="[float]33" Text="[string]Horizontal Zoom" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+				<Label Id="2d19394cdbdd49ba87208aaf2ad8b0a9" LabelOwner="[UIModel]5922d73951354877b5fea09fa59e5fa8" Left="[float]63" Text="[string]Vertical Zoom" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+				<Label Id="6e275cf8d5694c7488124335b1dadb5e" LabelOwner="[UIModel]6f99c119cb7b4669959b2efe5b1b50da" Left="[float]93" Text="[string]Pan" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+				<Label Id="db448ef877684de3864e595e86c23eb8" LabelOwner="[UIModel]6fdada33e76748e0b54ab492dbf3543b" Left="[float]123" Text="[string]Reset" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+				<Label Id="53a1b171a8c44e61a26721e4e4005912" LabelOwner="[UIModel]3a82415d9d3c43febb339a5acc40d83e" Left="[float]154" Text="[string]Map" Top="[float]-18" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+			</CompositeGraphTools>
+			<Label Height="[float]16" Id="b3488d3b6e994ceb84177a1cd6ee3681" LabelOwner="[UIModel]d7732f0426cc4af7817f9d085d46c35b" Left="[float]431" Text="[string]Long History Graph" Top="[float]54" Width="[float]103" xmlns="http://www.ni.com/PanelCommon" />
+			<ChannelButton BaseName="[string]Text Button" Channel="[string]mioDAQ/port0/line2" Content="[string]Button" Height="[float]30" Id="8aa568953ad24d9db1facc1b8b3c575e" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]146a240863284b1180f3de2c74e4887e" Left="[float]1062" Shape="[ButtonShape]Square" Top="[float]147" Width="[float]75" />
+			<Label Height="[float]16" Id="146a240863284b1180f3de2c74e4887e" LabelOwner="[UIModel]8aa568953ad24d9db1facc1b8b3c575e" Left="[float]1062" Text="[string]line2" Top="[float]127" Width="[float]25" xmlns="http://www.ni.com/PanelCommon" />
+		</ScreenSurface>
+	</Screen>
+</SourceFile>
